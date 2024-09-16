@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    padding: 150px 10%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F8F8FF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #4682B4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #F8F8FF;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F8F8FF;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #F8F8FF;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4682B4;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    color: hotpink;
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: hotpink;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 2px solid #4682B4;
+    border-radius: 40px;
+    color: #4682B4;
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #F8F8FF;
+    background: #4682B4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-img {
+    flex: 1 1 21rem;
+}
+
+.about-text {
+    flex: 1 1 21rem;
+}
+
+.about-text h2 {
+    font-size: 1.2rem;
+    color: hotpink;
+}
+
+.about-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4682B4;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: #4682B4;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.products-container .box {
+    flex: 1 1 10rem;
+    background: #4682B4;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.products-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+.products-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.heart {
+    margin: 1rem 0 0.1rem;
+}
+
+.products-container .box .heart .bx {
+    color: hotpink;
+}
+
+.products-container .box h2 {
+    color: #F8F8FF;
+    font-size: 1.2rem;
+}
+
+.products-container .box span {
+    color: #F8F8FF;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.box .btn {
+    border: 2px solid #F8F8FF;
+    color: #F8F8FF;
+}
+
+.box .btn:hover {
+    background: #F8F8FF;
+    color: #4682B4;
+}
